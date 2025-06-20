@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Base & Global Styles
+   ========================================================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* ==========================================================================
+   Component: Product Card
+   ========================================================================== */
+/* B - BLOQUE */
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px; /* Espacio interior para que el contenido no toque los bordes */
+    width: 300px; /* Ancho fijo para el componente */
+    margin: 30px auto; /* Para centrarlo y darle espacio vertical y horizontal */
+}
+
+/* E - ELEMENTOS */
+.product-card__image {
+    width: 100%; /* La imagen se ajusta al 100% del ancho del contenedor .product-card */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 4px;
+}
+
+.product-card__title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 1.2em; /* Un poco más grande que el texto normal para destacar */
+}
+
+.product-card__price {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+/* Define la geometría de un botón CUANDO es un elemento de la tarjeta */
+.product-card__button {
+    width: 100%; /* Hace que el botón ocupe todo el ancho disponible dentro de la tarjeta */
+}
+
+/* ==========================================================================
+   Component: Button
+   ========================================================================== */
+/* B - BLOQUE */
+.button {
+    padding: 10px 15px; /* Espacio interior del botón para que el texto no esté pegado al borde */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer; /* El cursor cambia a una mano para indicar que es clickeable */
+    text-align: center;
+    display: inline-block; /* Permite que el botón tenga ancho y alto, pero fluya con el texto si es necesario */
+}
+
+/* M - MODIFICADORES DEL BLOQUE */
+.button--primary {
+    background-color: #007bff;
+    color: white; /* El texto debe ser claro sobre un fondo oscuro */
+}
+
+.button--disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed; /* El cursor cambia para indicar que la acción no está permitida */
+}
