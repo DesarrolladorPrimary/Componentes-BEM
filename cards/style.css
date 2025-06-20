@@ -59,13 +59,14 @@ header {
    ========================================================================== */
 /* B - BLOQUE */
 .button {
+    margin: 0 auto;
     padding: 10px 15px; /* Espacio interior del botón para que el texto no esté pegado al borde */
     border: none;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer; /* El cursor cambia a una mano para indicar que es clickeable */
     text-align: center;
-    display: inline-block; /* Permite que el botón tenga ancho y alto, pero fluya con el texto si es necesario */
+    display: block; /* Permite que el botón tenga ancho y alto, pero fluya con el texto si es necesario */
 }
 
 /* M - MODIFICADORES DEL BLOQUE */
