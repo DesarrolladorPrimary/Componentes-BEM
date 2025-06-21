@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Base & Global Styles
+    Base y estilos globales
    ========================================================================== */
 * {
     padding: 0;
@@ -8,6 +8,7 @@
 }
 
 body {
+    background-color: aliceblue;
     font-family: sans-serif;
     color: #333;
 }
@@ -18,8 +19,27 @@ header {
     margin: 20px;
 }
 
+
+/* Estilos para el botón de volver */
+.back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 20px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+
 /* ==========================================================================
-   Component: Product Card
+   Componente: Trajeta de producto
    ========================================================================== */
 /* B - BLOQUE */
 .product-card {
@@ -55,7 +75,7 @@ header {
 }
 
 /* ==========================================================================
-   Component: Button
+   Componente: Boton
    ========================================================================== */
 /* B - BLOQUE */
 .button {
@@ -80,3 +100,5 @@ header {
     color: #6c757d;
     cursor: not-allowed; /* El cursor cambia para indicar que la acción no está permitida */
 }
+
+

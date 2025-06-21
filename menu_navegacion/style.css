@@ -1,0 +1,21 @@
+/* Estilos para el botón de volver */
+.back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 20px;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}

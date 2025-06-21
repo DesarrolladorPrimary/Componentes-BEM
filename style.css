@@ -1,0 +1,99 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.top-nav {
+    background-color: #343a40;
+    padding: 10px 40px;
+    overflow: hidden; /* Contiene los elementos flotantes */
+    border-bottom: 3px solid #007bff;
+}
+
+.top-nav h1 {
+    float: left;
+    color: white;
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+.top-nav ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li {
+    float: left;
+    margin-left: 20px;
+}
+
+.top-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.top-nav a:hover {
+    background-color: #495057;
+}
+
+.welcome-message {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.welcome-message h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.menu-container {
+    /* Técnica clásica para centrado absoluto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Estilos de la caja */
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-container h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.menu-container a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    margin-bottom: 15px; /* Espacio entre los botones */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all 0.2s ease-in-out;
+    min-width: 350px;
+}
+
+.menu-container a:last-child {
+    margin-bottom: 0; /* El último botón no necesita margen inferior */
+}
+
+.menu-container a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efecto de "levantarse" al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+} 
