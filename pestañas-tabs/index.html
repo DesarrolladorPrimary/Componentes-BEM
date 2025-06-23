@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pestañas (Tabs) solo con CSS y :target</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="tabs__header">
+        <a href="../index.html" class="tabs__header-link">Volver</a>
+        <h1 class="tabs__header-title">Pestañas (tabs)</h1>
+    </header>
+    <main>
+        <div class="tabs">
+    <nav class="tabs__nav">
+      <a href="#tab1" class="tabs__nav-link" id="link-tab1">Pestaña 1</a>
+      <a href="#tab2" class="tabs__nav-link" id="link-tab2">Pestaña 2</a>
+      <a href="#tab3" class="tabs__nav-link" id="link-tab3">Pestaña 3</a>
+    </nav>
+    <section id="tab1" class="tabs__panel">
+      <p>Contenido de la pestaña 1</p>
+    </section>
+    <section id="tab2" class="tabs__panel">
+      <p>Contenido de la pestaña 2</p>
+    </section>
+    <section id="tab3" class="tabs__panel">
+      <p>Contenido de la pestaña 3</p>
+    </section>
+  </div>
+    </main>
+</body>
+</html>
