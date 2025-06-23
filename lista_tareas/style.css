@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Estilos Globales y Encabezado
+   ========================================================================== */
+
+/* Reseteo básico para eliminar estilos por defecto de los navegadores */
+*{
+    margin: 0;
+    padding: 0;
+    /* Asegura que el padding y borde se incluyan en el ancho y alto total */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* B - BLOQUE: Encabezado de la página */
+.encabezado {
+    background-color: rgba(44, 39, 39, 0.65);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative; /* Para posicionar elementos hijos de forma absoluta */
+}
+
+/* E - ELEMENTO: Título del encabezado */
+.encabezado__titulo {
+    margin: 0;
+}
+
+/* E - ELEMENTO: Enlace para volver en el encabezado */
+.encabezado__volver {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover para el enlace de volver */
+.encabezado__volver:hover,
+.encabezado__volver:focus {
+    background-color: white;
+    color: #2c2727;
+}
+
+/* ==========================================================================
+   Componente: Lista de Tareas
+   ========================================================================== */
+
+/* B - BLOQUE: Contenedor de la lista de tareas */
+.lista-tarea {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+/* Estilo para la selección de texto dentro del componente */
+.lista-tarea::selection {
+    background-color: #28a745; /* Fondo verde al seleccionar */
+    color: white; /* Texto blanco para contraste */
+}
+
+/* E - ELEMENTO: Título de la lista de tareas */
+.lista-tarea__titulo {
+    text-align: center;
+    color: #2c2727;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* E - ELEMENTO: Lista de tareas */
+.lista-tarea__lista {
+    list-style: none;
+}
+
+/* E - ELEMENTO: Ítem de la lista de tareas */
+.lista-tarea__item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1em;
+}
+
+/* Estilo para el último ítem, para que no tenga borde inferior */
+.lista-tarea__item:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para el ítem de la lista cuando el checkbox está seleccionado (checked) */
+.lista-tarea__item:has(input[type="checkbox"]:checked) {
+    color: #38403a; /* Color verde para indicar que está completado */
+    text-decoration: line-through; /* Tacha el texto */
+    opacity: 0.8; /* Reduce la opacidad para que se vea más tenue */
+}
+
+/* Estilo para el checkbox dentro del ítem */
+.lista-tarea__item input[type="checkbox"] {
+    margin-right: 15px;
+    /* Aumenta el tamaño del checkbox para que sea más fácil de clickear */
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+
+/* ==========================================================================
+   Componente: Botón
+   ========================================================================== */
+
+/* E - ELEMENTO: Botón dentro de la lista de tareas */
+.lista-tarea__boton {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right; /* Alinea el botón a la derecha */
+    background-color: #ccc;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* M - MODIFICADOR: Estilo específico para el botón de eliminar */
+.boton--eliminar {
+    background-color: #f44336; /* Color rojo para eliminar */
+    color: white;
+}
+
+.boton--eliminar:hover {
+    background-color: #d32f2f;
+}
+
+
