@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* ==========================================================================
+   Componente: Encabezado de Página
+   ========================================================================== */
+.encabezado-pagina {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-bottom: 1px solid #444;
+}
+
+.encabezado-pagina__volver {
+    float: left;
+    color: #ddd;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+.encabezado-pagina__volver:hover {
+    background-color: #444;
+}
+
+/* ==========================================================================
+   Componente: Menú Principal
+   ========================================================================== */
+
+
+/* E - Lista de enlaces */
+.menu-principal__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    /* Centrado absoluto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* E - Cada item de la lista */
+.menu-principal__item {
+    display: inline-block;
+}
+
+/* E - El enlace dentro de cada item */
+.menu-principal__enlace {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.2s;
+}
+
+.menu-principal__enlace:hover {
+    background-color: #555;
+}
+
+/* M - Modificador para el item activo */
+.menu-principal__item--activo .menu-principal__enlace {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+
+
