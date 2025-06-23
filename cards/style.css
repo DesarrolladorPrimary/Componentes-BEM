@@ -1,0 +1,107 @@
+/* ==========================================================================
+    Base y estilos globales
+   ========================================================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+/* Estilos para el botón de volver */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    
+    background-color: #4a5568;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #2d3748;
+}
+
+
+/* ==========================================================================
+   Componente: Tarjeta de producto
+   ========================================================================== */
+/* B - BLOQUE */
+.tarjeta-producto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    margin: 30px auto;
+}
+
+/* E - ELEMENTOS */
+.tarjeta-producto__imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.tarjeta-producto__titulo {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.tarjeta-producto__precio {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.tarjeta-producto__boton {
+    width: 100%;
+}
+
+/* ==========================================================================
+   Componente: Boton
+   ========================================================================== */
+/* B - BLOQUE */
+.boton {
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+/* M - MODIFICADORES DEL BLOQUE */
+.boton--primario {
+    background-color: #007bff;
+    color: white;
+}
+
+.boton--desactivado {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+
