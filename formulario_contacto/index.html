@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto</title>
+</head>
+<body>
+    <header class="encabezado">
+        <a class="encabezado__link" href="../index.html">Volver</a>
+    </header>
+    
+    <main class="principal">
+        <h1 class="principal__titulo">Contacto</h1>
+        <form class="formulario">
+            <div class="formulario__campo">
+                <label for="nombre" class="formulario__etiqueta">Nombre</label>
+                <input class="formulario__entrada" type="text" id="nombre" placeholder="Tu Nombre" required>
+            </div>
+
+            <div class="formulario__campo">
+                <label for="email" class="formulario__etiqueta">E-mail</label>
+                <input class="formulario__entrada" type="email" id="email" placeholder="Tu E-mail" required>
+            </div>
+
+            <div class="formulario__campo">
+                <label for="mensaje" class="formulario__etiqueta">Mensaje</label>
+                <textarea class="formulario__areatexto" id="mensaje" placeholder="Tu Mensaje" required></textarea>
+            </div>
+
+            <input type="submit" value="Enviar" class="formulario__boton">
+        </form>
+    </main>
+</body>
+</html>
