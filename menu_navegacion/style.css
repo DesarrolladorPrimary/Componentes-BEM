@@ -1,89 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
 }
 
 body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+    font-family: sans-serif; /* Familia de fuentes principal */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: #f4f4f4; /* Fondo gris claro */
 }
 
 main {
-    padding: 20px;
-    text-align: center;
-    margin-top: 80px;
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    margin-top: 80px; /* Espacio superior para dejar lugar al encabezado */
 }
 
 /* ==========================================================================
    Componente: Encabezado de Página
    ========================================================================== */
 .encabezado-pagina {
-    background-color: #333;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border-bottom: 1px solid #444;
+    background-color: #333; /* Fondo gris oscuro */
+    padding: 10px 20px; /* Espaciado interno */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Lo posiciona arriba */
+    left: 0; /* Lo posiciona a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 100; /* Prioridad de apilamiento */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+    border-bottom: 1px solid #444; /* Línea divisoria inferior */
 }
 
 .encabezado-pagina__volver {
-    float: left;
-    color: #ddd;
-    text-decoration: none;
-    padding: 8px 12px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    transition: background-color 0.2s;
+    float: left; /* Alinea a la izquierda */
+    color: #ddd; /* Texto gris claro */
+    text-decoration: none; /* Sin subrayado */
+    padding: 8px 12px; /* Espaciado interno */
+    border: 1px solid #555; /* Borde gris oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.2s; /* Transición suave */
 }
 .encabezado-pagina__volver:hover {
-    background-color: #444;
+    background-color: #444; /* Fondo más oscuro al pasar el mouse */
 }
 
 /* ==========================================================================
    Componente: Menú Principal
    ========================================================================== */
 
-
 /* E - Lista de enlaces */
 .menu-principal__lista {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-    /* Centrado absoluto */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    list-style: none; /* Sin viñetas */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    position: absolute; /* Posicionamiento absoluto para centrar */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste fino de centrado */
 }
 
 /* E - Cada item de la lista */
 .menu-principal__item {
-    display: inline-block;
+    display: inline-block; /* Muestra los items en línea */
 }
 
 /* E - El enlace dentro de cada item */
 .menu-principal__enlace {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    transition: background-color 0.2s;
+    display: block; /* Ocupa todo el ancho */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    padding: 8px 15px; /* Espaciado interno */
+    transition: background-color 0.2s; /* Transición suave */
 }
 
 .menu-principal__enlace:hover {
-    background-color: #555;
+    background-color: #555; /* Fondo más oscuro al pasar el mouse */
 }
 
 /* M - Modificador para el item activo */
 .menu-principal__item--activo .menu-principal__enlace {
-    color: #00aaff;
-    font-weight: bold;
+    color: #00aaff; /* Azul claro para el activo */
+    font-weight: bold; /* Texto en negrita */
 }
 
 
