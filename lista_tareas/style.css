@@ -4,54 +4,54 @@
 
 /* Reseteo básico para eliminar estilos por defecto de los navegadores */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
     /* Asegura que el padding y borde se incluyan en el ancho y alto total */
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
 }
 
 body {
-    font-family: sans-serif;
-    background-color: antiquewhite;
-    color: #333;
-    line-height: 1.6;
+    font-family: sans-serif; /* Familia de fuentes principal */
+    background-color: antiquewhite; /* Fondo beige claro */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6; /* Altura de línea */
 }
 
 /* B - BLOQUE: Encabezado de la página */
 .encabezado {
-    background-color: rgba(44, 39, 39, 0.65);
-    padding: 20px;
-    color: white;
-    text-align: center;
+    background-color: rgba(44, 39, 39, 0.65); /* Fondo gris oscuro translúcido */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
     position: relative; /* Para posicionar elementos hijos de forma absoluta */
 }
 
 /* E - ELEMENTO: Título del encabezado */
 .encabezado__titulo {
-    margin: 0;
+    margin: 0; /* Sin margen */
 }
 
 /* E - ELEMENTO: Enlace para volver en el encabezado */
 .encabezado__volver {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    padding: 8px 15px;
-    background-color: transparent;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    position: absolute; /* Posiciona el enlace de forma absoluta */
+    left: 20px; /* Distancia desde la izquierda */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajuste fino de centrado vertical */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Texto blanco */
+    border: 2px solid white; /* Borde blanco */
+    padding: 8px 15px; /* Espaciado interno */
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 /* Efecto hover para el enlace de volver */
 .encabezado__volver:hover,
 .encabezado__volver:focus {
-    background-color: white;
-    color: #2c2727;
+    background-color: white; /* Fondo blanco al pasar el mouse */
+    color: #2c2727; /* Texto oscuro al pasar el mouse */
 }
 
 /* ==========================================================================
@@ -60,12 +60,12 @@ body {
 
 /* B - BLOQUE: Contenedor de la lista de tareas */
 .lista-tarea {
-    background-color: #fff;
-    margin: 30px auto;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    background-color: #fff; /* Fondo blanco */
+    margin: 30px auto; /* Centrado y espacio vertical */
+    padding: 20px 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 600px; /* Ancho máximo */
 }
 
 /* Estilo para la selección de texto dentro del componente */
@@ -76,43 +76,43 @@ body {
 
 /* E - ELEMENTO: Título de la lista de tareas */
 .lista-tarea__titulo {
-    text-align: center;
-    color: #2c2727;
-    margin-bottom: 20px;
-    font-size: 2em;
+    text-align: center; /* Centra el texto */
+    color: #2c2727; /* Texto oscuro */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 2em; /* Tamaño de fuente */
 }
 
 /* E - ELEMENTO: Lista de tareas */
 .lista-tarea__lista {
-    list-style: none;
+    list-style: none; /* Sin viñetas */
 }
 
 /* E - ELEMENTO: Ítem de la lista de tareas */
 .lista-tarea__item {
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 1.1em;
+    padding: 15px 0; /* Espaciado vertical */
+    border-bottom: 1px solid #eee; /* Línea divisoria inferior */
+    font-size: 1.1em; /* Tamaño de fuente */
 }
 
 /* Estilo para el último ítem, para que no tenga borde inferior */
 .lista-tarea__item:last-child {
-    border-bottom: none;
+    border-bottom: none; /* Elimina la línea inferior */
 }
 
 /* Estilo para el ítem de la lista cuando el checkbox está seleccionado (checked) */
 .lista-tarea__item:has(input[type="checkbox"]:checked) {
     color: #38403a; /* Color verde para indicar que está completado */
     text-decoration: line-through; /* Tacha el texto */
-    opacity: 0.8; /* Reduce la opacidad para que se vea más tenue */
+    opacity: 0.8; /* Reduce la opacidad */
 }
 
 /* Estilo para el checkbox dentro del ítem */
 .lista-tarea__item input[type="checkbox"] {
-    margin-right: 15px;
+    margin-right: 15px; /* Espacio a la derecha */
     /*  Aumenta el tamaño del checkbox para que sea más fácil de clickear */
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
+    width: 20px; /* Tamaño del checkbox */
+    height: 20px; /* Tamaño del checkbox */
+    vertical-align: middle; /* Centrado vertical */
 }
 
 
@@ -123,25 +123,25 @@ body {
 
 /* E - ELEMENTO: Botón dentro de la lista de tareas */
 .lista-tarea__boton {
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
     float: right; /* Alinea el botón a la derecha */
-    background-color: #ccc;
-    color: #333;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    background-color: #ccc; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave */
 }
 
 /* M - MODIFICADOR: Estilo específico para el botón de eliminar */
 .boton--eliminar {
     background-color: #f44336; /* Color rojo para eliminar */
-    color: white;
+    color: white; /* Texto blanco */
 }
 
 .boton--eliminar:hover {
-    background-color: #d32f2f;
+    background-color: #d32f2f; /* Fondo rojo más oscuro al pasar el mouse */
 }
 
 
