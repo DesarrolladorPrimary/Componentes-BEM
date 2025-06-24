@@ -20,28 +20,30 @@ body {
    Componente: Encabezado de Página
    ========================================================================== */
 /* B - BLOQUE */
-/* 'display: flex' activa el modelo de caja flexible.
-   'justify-content: space-between' empuja los elementos hijos a los extremos opuestos.
-   'align-items: center' los alinea verticalmente en el centro. */
 .encabezado-pagina {
     background-color: #ffffff; /* Color de fondo blanco para el encabezado */
     padding: 1rem 2rem; /* Espaciado interno (arriba/abajo y a los lados) */
-    display: flex; /* Activa el modelo de caja flexible para alinear los hijos */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-    align-items: center; /* Centra los elementos hijos verticalmente */
+    /* Centrado tradicional usando text-align y float */
+    text-align: center;
     border-bottom: 1px solid #eee; /* Añade una línea divisoria sutil en la parte inferior */
+    position: relative;
+    min-height: 60px;
 }
-/* E - ELEMENTOS */
 .encabezado-pagina__volver {
     color: #333; /* Color del texto del enlace */
     text-decoration: none; /* Elimina el subrayado por defecto del enlace */
     font-size: 1.2rem; /* Tamaño de la fuente */
     font-weight: bold; /* Hace el texto del enlace más grueso (negrita) */
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .encabezado-pagina__titulo {
     margin: 0; /* Elimina el margen por defecto del título h1 */
     color: #333; /* Color del texto del título */
     font-size: 1.5rem; /* Tamaño de la fuente del título */
+    display: inline-block;
 }
 
 /* ==========================================================================
