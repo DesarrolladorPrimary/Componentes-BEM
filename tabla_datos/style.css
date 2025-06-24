@@ -1,84 +1,90 @@
 /* ==========================================================================
    Base y estilos globales
    ========================================================================== */
+/* Selector para el body de la página */
 body {
-    background: #f8fafd;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    margin: 0;
-    padding: 0;
+    background: #f8fafd; /* Color de fondo muy claro */
+    font-family: Arial, Helvetica, sans-serif; /* Familia de fuentes principal */
+    color: #222; /* Color de texto principal */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
 }
 
 /* ========================================================================== 
    Componente: Encabezado de la Tabla de Datos
    ========================================================================== */
+/* Bloque principal del encabezado de la tabla */
 .tabla-datos__encabezado {
-    background: #1e293b;
-    color: #fff;
-    padding: 18px 0 18px 32px;
-    border-radius: 0 0 12px 12px;
-    margin-bottom: 24px;
+    background: #1e293b; /* Fondo azul oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 18px 0 18px 32px; /* Espaciado interno: arriba/abajo 18px, izquierda 32px */
+    border-radius: 0 0 12px 12px; /* Bordes redondeados solo abajo */
+    margin-bottom: 24px; /* Espacio inferior */
 }
 
+/* Enlace para volver atrás en el encabezado */
 .tabla-datos__volver {
-    color: #fbbf24;
-    text-decoration: none;
-    font-size: 1rem;
-    margin-right: 24px;
+    color: #fbbf24; /* Color amarillo */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    margin-right: 24px; /* Espacio a la derecha */
 }
 
+/* Título del encabezado de la tabla */
 .tabla-datos__titulo {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0;
+    display: inline-block; /* Permite ajustar el ancho al contenido */
+    font-size: 1.5rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    margin: 0; /* Sin margen */
 }
 
 /* ========================================================================== 
    Componente: Principal de la Tabla de Datos
    ========================================================================== */
+/* Contenedor principal de la sección de datos */
 .tabla-datos__principal {
-    padding: 24px;
-    display: block;
+    padding: 24px; /* Espaciado interno */
+    display: block; /* Ocupa todo el ancho disponible */
 }
 
 /* ========================================================================== 
    Componente: Tabla de Datos
    ========================================================================== */
+/* Tabla principal de datos */
 .tabla-datos__tabla {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(30,41,59,0.08);
-    overflow: hidden;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 900px; /* Ancho máximo de la tabla */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 12px rgba(30,41,59,0.08); /* Sombra sutil */
+    overflow: hidden; /* Oculta el desbordamiento */
 }
 
 /* E - ELEMENTO: Cabecera de la tabla */
 .tabla-datos__cabecera th {
-    background: #334155;
-    color: #fff;
-    padding: 14px 8px;
-    font-size: 1.1rem;
-    border-bottom: 2px solid #1e293b;
+    background: #334155; /* Fondo azul intermedio */
+    color: #fff; /* Texto blanco */
+    padding: 14px 8px; /* Espaciado interno */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    border-bottom: 2px solid #1e293b; /* Línea inferior azul oscuro */
 }
 
 /* E - ELEMENTO: Cuerpo de la tabla */
 .tabla-datos__cuerpo td {
-    padding: 12px 8px;
-    border-bottom: 1px solid #e2e8f0;
-    text-align: center;
-    font-size: 1rem;
+    padding: 12px 8px; /* Espaciado interno */
+    border-bottom: 1px solid #e2e8f0; /* Línea inferior gris claro */
+    text-align: center; /* Centra el texto */
+    font-size: 1rem; /* Tamaño de fuente estándar */
 }
 
 /* E - ELEMENTO: Última fila sin borde inferior */
 .tabla-datos__fila:last-child td {
-    border-bottom: none;
+    border-bottom: none; /* Elimina la línea inferior en la última fila */
 }
 
 /* E - ELEMENTO: Celda de cabecera */
 .tabla-datos__celda--th {
-    font-weight: bold;
+    font-weight: bold; /* Texto en negrita */
 }
